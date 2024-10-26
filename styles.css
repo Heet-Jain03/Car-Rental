@@ -1,0 +1,156 @@
+    body {
+        font-family: 'Inter', Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        color: #ffffff;
+        font-size: 2.8em;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    header p {
+        color: #ffffff;
+        font-size: 1.6em;
+        opacity: 0.9;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    label {
+        display: block;
+        margin: 20px 0 8px;
+        font-size: 1.2em;
+        color: #4a5568;
+        font-weight: 500;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 14px;
+        margin: 5px 0;
+        border-radius: 12px;
+        border: 2px solid #e2e8f0;
+        transition: all 0.3s ease;
+        font-size: 1.1em;
+    }
+
+    input:focus, select:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    }
+
+    button {
+        background: linear-gradient(to right, #667eea, #764ba2);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3em;
+        padding: 15px;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #result {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1.6em;
+        color: #2d3748;
+    }
+
+    #total-cost-label {
+        color: #667eea;
+        font-weight: 600;
+    }
+
+    #total-cost {
+        color: #667eea;
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+
+    #rental-summary {
+        margin-top: 30px;
+        background: #f7fafc;
+        padding: 20px;
+        border-radius: 15px;
+        border-left: 5px solid #667eea;
+    }
+
+    #rental-summary-label {
+        color: #4a5568;
+        font-weight: 700;
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    #car-summary, #duration-summary, #damage-summary {
+        color: #4a5568;
+        margin: 10px 0;
+        font-size: 1.1em;
+    }
+
+    #history {
+        margin-top: 40px;
+    }
+
+    #history-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #history-list li {
+        margin: 10px 0;
+        padding: 15px;
+        background: linear-gradient(to right, #f6f9ff, #f1f5ff);
+        border-radius: 12px;
+        border-left: 4px solid #667eea;
+        transition: transform 0.2s ease;
+    }
+
+    #history-list li:hover {
+        transform: translateX(5px);
+    }
+
+    @media (max-width: 768px) {
+        main {
+            padding: 20px;
+        }
+        
+        header h1 {
+            font-size: 2.2em;
+        }
+        
+        header p {
+            font-size: 1.3em;
+        }
+    }
